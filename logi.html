@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+background-color: aqua;
+background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <center>
+        <h1>Log in Form</h1>
+        <p id="999">Email</p>
+        <input id="123" type="email" placeholder="email"><br><br>
+        <p id="888">Password</p>
+        <input id="abc" type="password" placeholder="password"><br><br>
+        <button onclick="return my();" id="333">log in</button>
+    </center>
+    <script>
+        document.getElementById("999").style.color = "red" ;
+        document.getElementById("888").style.color = "red" ;
+        document.getElementById("333").style.cursor = "auto" ;
+
+function my (){
+    var email  = document.getElementById("123").value;
+    var password =document.getElementById("abc").value;
+
+    if (email == "12345"&& password =="123") {
+        document.write("welcome user")
+    } else {
+        document.write("invalid #######")
+    }
+}
+    </script>
+    
+</body>
+</html>
